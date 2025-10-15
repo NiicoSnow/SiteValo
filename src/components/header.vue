@@ -1,12 +1,19 @@
 <script setup>
-import Header from './components/header.vue'
+defineProps({
+  msg: {
+    type: String,
+    required: true,
+  },
+})
 </script>
 
 <template>
-<Header></Header>
+  <p>prout</p>
 </template>
 
 <style scoped>
+
+
 @media (min-width: 1024px) {
   }
 </style>
