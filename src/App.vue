@@ -2,16 +2,12 @@
 import { ref } from 'vue'
 import SearchBar from './components/SearchBar.vue'
 import RoleFilter from './components/RoleFilter.vue'
-import AgentList from './components/AgentList.vue'
+import AgentSelec from './components/AgentSelec.vue'
 import AgentDetails from './components/AgentDetails.vue'
+import AgentListe from './components/AgentListe.vue'
 
 // Données "mockées" (exemple minimal)
-const agents = ref([
-  { id: 1, name: 'Jett', role: 'Duelist', difficulty: 'Facile' },
-  { id: 2, name: 'Sova', role: 'Initiator', difficulty: 'Moyenne' },
-  { id: 3, name: 'Killjoy', role: 'Sentinel', difficulty: 'Moyenne' },
-  { id: 4, name: 'Omen', role: 'Controller', difficulty: 'Facile' }
-])
+const agents = ref(AgentListe)
 
 // États UI
 const query = ref('')
@@ -50,7 +46,7 @@ function matchAgent(a) {
     </div>
 
     <!-- Liste d'agents filtrée -->
-    <AgentList
+    <AgentSelec
       :agents="agents.filter(matchAgent)"
       @select="handleSelect"
     />
