@@ -5,6 +5,7 @@ import RoleFilter from './components/RoleFilter.vue'
 import AgentSelec from './components/AgentSelec.vue'
 import AgentDetails from './components/AgentDetails.vue'
 import AgentListe from './components/AgentListe.vue'
+import Header from './components/header.vue'
 
 // Données "mockées" (exemple minimal)
 const agents = ref(AgentListe)
@@ -36,8 +37,9 @@ function matchAgent(a) {
 </script>
 
 <template>
+  <Header title="Valorant Agents/Stats" />
   <div class="container">
-    <h1>Mini-guide des agents (Valorant)</h1>
+    <h1>Mini-guide des agents de Valorant</h1>
 
     <!-- Barre de recherche et filtre -->
     <div class="toolbar">
