@@ -33,4 +33,7 @@ export default { components: { AgentCard } }
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 12px;
 }
+body{
+  color:black
+}
 </style>

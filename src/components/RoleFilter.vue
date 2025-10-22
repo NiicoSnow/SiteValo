@@ -4,7 +4,7 @@ const props = defineProps({
 })
 const emit = defineEmits(['update:modelValue'])
 
-const roles = ['Tous', 'Duelliste', 'Initiateur', 'Sentinelle', 'Controlleur']
+const roles = ['Tous', 'Duelliste', 'Initiateur', 'Sentinelle', 'Contrôleur']
 </script>
 
 <template>

@@ -12,7 +12,7 @@ const emit = defineEmits(['close'])
   <div class="overlay" @click.self="emit('close')">
     <div class="panel">
       <header class="panel-header">
-        <h2>{{ agent.name }}</h2>
+        <h2 class="nom-agent">{{ agent.name }}</h2>
         <button class="close" @click="emit('close')">×</button>
       </header>
       <ul class="info">
@@ -26,17 +26,42 @@ const emit = defineEmits(['close'])
 
 <style scoped>
 .overlay {
-  position: fixed; inset: 0; background: rgba(0,0,0,.4);
-  display: grid; place-items: center;
+  position: fixed;
+  inset: 0; 
+  background: rgba(0,0,0,.4);
+  display: grid; 
+  place-items: center;
 }
 .panel {
-  width: min(560px, 92vw); background: #fff; border-radius: 12px; padding: 16px;
+  width: min(560px, 92vw); 
+  background: #fff; 
+  border-radius: 12px; 
+  padding: 16px;
 }
-.panel-header { display: flex; align-items: center; justify-content: space-between; }
+.panel-header { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; }
 .close {
-  border: none; background: transparent; font-size: 22px; cursor: pointer;
+  border: none; 
+  background: transparent; 
+  font-size: 22px; 
+  cursor: pointer;
 }
-.info { list-style: none; padding: 0; margin: 8px 0 0; }
-.info li { margin: 6px 0; }
-.hint { color: #666; font-size: 14px; margin-top: 12px; }
+.info { 
+  list-style: none; 
+  padding: 0; 
+  margin: 8px 0 0;
+  color : black }
+.info li { 
+  margin: 6px 0; 
+}
+.hint { 
+  color: #666; 
+  font-size: 14px; 
+  margin-top: 12px; 
+}
+.nom-agent{
+  color : black
+}
 </style>

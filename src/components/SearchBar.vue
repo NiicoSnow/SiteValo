@@ -24,5 +24,7 @@ const emit = defineEmits(['update:modelValue'])
   border-radius: 8px;
   outline: none;
 }
-.search:focus { border-color: #42b983; }
+.search:focus { 
+  border-color: #42b983; 
+}
 </style>

@@ -33,15 +33,30 @@ function onClick() {
   cursor: pointer;
   background: #fff;
 }
-.card:hover { border-color: #42b983; }
+.card:hover { 
+  border-color: #42b983; 
+}
 .header {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
 }
-.title { margin: 0; font-size: 18px; }
+.title { margin: 0; 
+  font-size: 18px; 
+}
 .role {
-  font-size: 12px; padding: 4px 8px; border: 1px solid #ddd; border-radius: 999px;
+  font-size: 12px; 
+  padding: 4px 8px; 
+  border: 1px solid #ddd; 
+  border-radius: 999px;
 }
-.difficulty { margin: 8px 0 0; font-size: 14px; }
-.easy { color: #2d8a5f; }
-.hard { color: #c04848; }
+.difficulty { margin: 8px 0 0; 
+  font-size: 14px; 
+}
+.easy { 
+  color: #2d8a5f; 
+}
+.hard { 
+  color: #c04848; 
+}
 </style>
