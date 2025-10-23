@@ -6,6 +6,7 @@ import AgentSelec from './components/AgentSelec.vue'
 import AgentDetails from './components/AgentDetails.vue'
 import AgentListe from './components/AgentListe.vue'
 import Header from './components/header.vue'
+import Footer from './components/footer.vue'
 
 // Données "mockées" (exemple minimal)
 const agents = ref(AgentListe)
@@ -37,7 +38,7 @@ function matchAgent(a) {
 </script>
 
 <template>
-  <Header title="Valorant Agents/Stats" />
+  <Header title="Valorant Agents/Stats"></Header>
   <div class="container">
     <h1>Mini-guide des agents de Valorant</h1>
 
@@ -65,6 +66,7 @@ function matchAgent(a) {
       Aucun agent ne correspond à la recherche.
     </p>
   </div>
+  <Footer footer__title="Projet par Nicolas Lefebvre & Sahan Toksoz"></Footer>
 </template>
 
 <style scoped>
@@ -73,6 +75,7 @@ function matchAgent(a) {
   margin: 32px auto;
   padding: 0 16px;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  min-height: 700px;
 }
 h1 {
   text-align: center;
