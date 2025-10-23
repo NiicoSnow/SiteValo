@@ -8,25 +8,21 @@ import AgentListe from './components/AgentListe.vue'
 import Header from './components/header.vue'
 import Footer from './components/footer.vue'
 
-// Données "mockées" (exemple minimal)
 const agents = ref(AgentListe)
 
 // États UI
 const query = ref('')
-const role = ref('Tous') // Tous | Duelist | Initiator | Sentinel | Controller
+const role = ref('Tous') 
 const selectedAgent = ref(null)
 
-// Quand on clique une carte, on sélectionne l'agent
 function handleSelect(agent) {
   selectedAgent.value = agent
 }
 
-// Réinitialiser la sélection
 function clearSelection() {
   selectedAgent.value = null
 }
 
-// Fonction utilitaire de filtrage (utilisée dans le template)
 function matchAgent(a) {
   const matchText =
     a.name.toLowerCase().includes(query.value.toLowerCase()) ||
@@ -42,26 +38,22 @@ function matchAgent(a) {
   <div class="container">
     <h1>Mini-guide des agents de Valorant</h1>
 
-    <!-- Barre de recherche et filtre -->
     <div class="toolbar">
       <SearchBar v-model="query" placeholder="Rechercher un agent ou un rôle…" />
       <RoleFilter v-model="role" />
     </div>
 
-    <!-- Liste d'agents filtrée -->
     <AgentSelec
       :agents="agents.filter(matchAgent)"
       @select="handleSelect"
     />
 
-    <!-- Panneau de détails -->
     <AgentDetails
       v-if="selectedAgent"
       :agent="selectedAgent"
       @close="clearSelection"
     />
 
-    <!-- Message si aucun résultat -->
     <p v-if="agents.filter(matchAgent).length === 0" class="empty">
       Aucun agent ne correspond à la recherche.
     </p>

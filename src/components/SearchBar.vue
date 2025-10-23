@@ -20,11 +20,11 @@ const emit = defineEmits(['update:modelValue'])
 .search {
   flex: 1 1 280px;
   padding: 10px 12px;
-  border: 1px solid #ddd;
+  border: 2px solid #0F1923;
   border-radius: 8px;
   outline: none;
 }
 .search:focus { 
-  border-color: #42b983; 
+  border-color: #FF4656; 
 }
 </style>
