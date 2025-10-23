@@ -16,7 +16,7 @@ export default
     difficulty: 'Moyenne', 
     image: new URL('../assets/images/icons/Breach_icon.webp', import.meta.url).href,
     text :"Breach, le Suédois bionique, tire de puissantes décharges cinétiques pour ouvrir un chemin en territoire ennemi. Grâce aux dégâts et aux diversions ainsi provoqués, aucun combat n'est jamais en sa défaveur.",
-    video :"https://www.youtube.com/embed/=Rux0HjzKQbw"
+    video :"https://www.youtube.com/embed/Rux0HjzKQbw"
   },
   { id: 3, 
     name: 'Brimstone', 
