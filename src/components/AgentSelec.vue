@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  agents: { type: Array, required: true } // [{id, name, role, difficulty}]
+  agents: { type: Array, required: true }
 })
 const emit = defineEmits(['select'])
 
@@ -17,6 +17,7 @@ function selectAgent(agent) {
       :name="agent.name"
       :role="agent.role"
       :difficulty="agent.difficulty"
+      :image="agent.image"
       @select="selectAgent(agent)"
     />
   </div>

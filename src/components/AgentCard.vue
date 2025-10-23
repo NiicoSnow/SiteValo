@@ -2,7 +2,8 @@
 const props = defineProps({
   name: { type: String, required: true },
   role: { type: String, required: true },
-  difficulty: { type: String, required: true }
+  difficulty: { type: String, required: true },
+  image: { type: String, required: true } 
 })
 const emit = defineEmits(['select'])
 
@@ -13,10 +14,11 @@ function onClick() {
 
 <template>
   <button class="card" @click="onClick">
-    <header class="header">
+    <img :src="image" :alt="`Image de ${name}`" class="agent-image" />
+    <div class="div">
       <h3 class="title">{{ name }}</h3>
       <span class="role">{{ role }}</span>
-    </header>
+    </div>
     <p class="difficulty" :class="{ hard: difficulty === 'Difficile', easy: difficulty === 'Facile' }">
       Difficulté : {{ difficulty }}
     </p>
@@ -34,9 +36,9 @@ function onClick() {
   background: #fff;
 }
 .card:hover { 
-  border-color: #42b983; 
+  border: 5px solid #FF4656;
 }
-.header {
+.div {
   display: flex; 
   align-items: center; 
   justify-content: space-between;
@@ -58,5 +60,8 @@ function onClick() {
 }
 .hard { 
   color: #c04848; 
+}
+.agent-image{
+  width: 100%;
 }
 </style>
