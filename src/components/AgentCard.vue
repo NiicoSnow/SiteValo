@@ -43,7 +43,8 @@ function onClick() {
   align-items: center; 
   justify-content: space-between;
 }
-.title { margin: 0; 
+.title { 
+  margin: 0; 
   font-size: 18px; 
 }
 .role {
@@ -52,7 +53,8 @@ function onClick() {
   border: 1px solid #ddd; 
   border-radius: 999px;
 }
-.difficulty { margin: 8px 0 0; 
+.difficulty { 
+  margin: 8px 0 0; 
   font-size: 14px; 
 }
 .easy { 

@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar.vue'
 import RoleFilter from './components/RoleFilter.vue'
 import AgentSelec from './components/AgentSelec.vue'
 import AgentDetails from './components/AgentDetails.vue'
-import AgentListe from './components/AgentListe.vue'
+import AgentListe from './components/AgentList.vue'
 import Header from './components/header.vue'
 import Footer from './components/footer.vue'
 
