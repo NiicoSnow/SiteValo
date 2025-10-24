@@ -66,7 +66,6 @@ function matchAgent(a) {
   max-width: 1000px;
   margin: 32px auto;
   padding: 0 16px;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   min-height: 700px;
 }
 h1 {
